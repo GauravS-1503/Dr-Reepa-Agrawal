@@ -103,7 +103,7 @@ function Header() {
     <header className="r-header">
       <div className="r-header-inner r-wrap">
         <a href="#top" className="r-brand" aria-label="Dr. Reepa Agrawal, home">
-          <img src="/images/pediatric-care-nutrition-logo.png" alt="" />
+          <img src={`${import.meta.env.BASE_URL}images/pediatric-care-nutrition-logo.png`} alt="" />
           <span>
             <strong>Dr. Reepa Agrawal</strong>
             <small>pediatric care</small>
@@ -326,7 +326,7 @@ export default function RevampedPage() {
               <span className="r-spark r-spark-two">✦</span>
               <div className="r-art-circle">
                 <img
-                  src="/images/pediatric-doctor-illustration.png"
+                  src={`${import.meta.env.BASE_URL}images/pediatric-doctor-illustration.png`}
                   alt="Illustration of a friendly pediatric doctor"
                 />
               </div>
@@ -359,7 +359,7 @@ export default function RevampedPage() {
             <div className="r-photo-composition">
               <div className="r-photo-frame">
                 <img
-                  src="/images/presentation.png"
+                  src={`${import.meta.env.BASE_URL}images/presentation.png`}
                   alt="Pediatric healthcare professional at a medical presentation"
                 />
               </div>
@@ -620,7 +620,7 @@ export default function RevampedPage() {
           <div className="r-footer-bottom">
             <span>© {new Date().getFullYear()} Dr. Reepa Agrawal</span>
             <span>Made with care for little ones & their people.</span>
-            <a href="/">View the original version</a>
+            <a href={`${import.meta.env.BASE_URL}${import.meta.env.VITE_PAGES_ORIGINAL_PATH || ""}`}>View the original version</a>
           </div>
         </div>
       </footer>

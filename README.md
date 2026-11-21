@@ -13,6 +13,10 @@ Open the local URL printed by Vite. To check the production build, run `npm run 
 
 The original page is at `/`. The second design is at `/revamped/` (for example, `http://localhost:5173/revamped/` when Vite uses its default port). Both are included in the production build.
 
+## GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the site when changes are pushed to `main`. In the repository's **Settings → Pages**, set **Source** to **GitHub Actions**. The deployed site shows the revamped design at the site root and the original version at `/original/`. The revamped design is also available at `/revamped/`.
+
 ## Where to edit
 
 - `src/PageMarkup.jsx` — headings, copy, layout, navigation, footer, and forms.

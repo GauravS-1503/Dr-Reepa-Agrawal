@@ -23,7 +23,7 @@ export default function PageMarkup({
           <a className="brand" href="#home" aria-label="Dr. Reepa Agrawal home">
             <img
               className="brand-logo header-logo"
-              src="/images/pediatric-care-nutrition-logo.png"
+              src={`${import.meta.env.BASE_URL}images/pediatric-care-nutrition-logo.png`}
               alt=""
               width="96"
               height="64"
@@ -106,7 +106,7 @@ export default function PageMarkup({
               <span className="spark s2">♡</span>
               <div className="hero-art">
                 <img
-                  src="/images/team.png"
+                  src={`${import.meta.env.BASE_URL}images/team.png`}
                   alt="Pediatric healthcare team at an educational event"
                 />
               </div>
@@ -129,7 +129,7 @@ export default function PageMarkup({
           <div className="container about-grid">
             <div className="about-photo reveal">
               <img
-                src="/images/presentation.png"
+                  src={`${import.meta.env.BASE_URL}images/presentation.png`}
                 alt="Pediatric healthcare professional at a medical presentation"
               />
               <div className="photo-note">
@@ -708,7 +708,7 @@ export default function PageMarkup({
               >
                 <img
                   className="brand-logo"
-                  src="/images/reepa-agrawal-monogram.svg"
+                  src={`${import.meta.env.BASE_URL}images/reepa-agrawal-monogram.svg`}
                   alt=""
                   width="52"
                   height="52"
